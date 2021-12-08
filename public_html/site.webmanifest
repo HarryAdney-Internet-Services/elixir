@@ -1,8 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
-    "icons": [
-        {
+    "name": "Elixir Richmond",
+    "short_name": "Elixir",
+    "icons": [{
             "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
