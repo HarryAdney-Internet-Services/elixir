@@ -191,7 +191,7 @@ h6 {
   font-size: 28px;
   margin: 0;
   padding: 0;
-  line-height: 1;
+  line-height: 2;
   font-weight: 300;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
@@ -497,9 +497,10 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#hero h1 span {
-  color: #cda45e;
-}
+/* #hero h1 span {
+  color: gold;
+  line-height: 1.5;
+} */
 
 #hero h2 {
   color: #eee;
