@@ -1,0 +1,7 @@
+Example of a menu item
+
+<div class="col-lg-6 col-12 menu-item filter-drinks">
+  <!-- <img src="assets/img/menu/christmas_pudding_70x70.png" class="menu-img" alt="Christmas Pudding"> -->
+  <div class="menu-content"><a href="#">Christmas Pudding</a><span>&pound;5.95</span></div>
+  <div class="menu-ingredients"></div>
+</div>

@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -708,7 +708,7 @@ section {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   color: #cda45e;
 }
 
@@ -938,7 +938,7 @@ section {
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .menu #menu-flters li:hover,
@@ -962,7 +962,7 @@ section {
 }
 
 .menu .menu-content {
-  margin-left: 35px;
+  margin-left: 10px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -1005,7 +1005,9 @@ section {
 }
 
 .menu .menu-ingredients {
-  margin-left: 35px;
+  min-width: 8rem;
+  max-width: 30rem;
+  margin: 0 10px;
   font-style: italic;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
@@ -1372,90 +1374,6 @@ section {
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Chefs
---------------------------------------------------------------*/
-.chefs .member {
-  text-align: center;
-  margin-bottom: 20px;
-  background: #343a40;
-  position: relative;
-  overflow: hidden;
-}
-
-.chefs .member .member-info {
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: 0.2s;
-}
-
-.chefs .member .member-info-content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 10px;
-  transition: bottom 0.4s;
-}
-
-.chefs .member .member-info-content h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-  color: #fff;
-}
-
-.chefs .member .member-info-content span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-  color: #fff;
-}
-
-.chefs .member .social {
-  position: absolute;
-  left: 0;
-  bottom: -38px;
-  right: 0;
-  height: 48px;
-  transition: bottom ease-in-out 0.4s;
-  text-align: center;
-}
-
-.chefs .member .social a {
-  transition: color 0.3s;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.chefs .member .social a:hover {
-  color: #cda45e;
-}
-
-.chefs .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.chefs .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
-  opacity: 1;
-  transition: 0.4s;
-}
-
-.chefs .member:hover .member-info-content {
-  bottom: 60px;
-  transition: bottom 0.4s;
-}
-
-.chefs .member:hover .social {
-  bottom: 0;
-  transition: bottom ease-in-out 0.4s;
-}
 
 /*--------------------------------------------------------------
 # Contact
@@ -1652,7 +1570,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
