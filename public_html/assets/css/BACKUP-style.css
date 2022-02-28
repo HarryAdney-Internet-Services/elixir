@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 /*--------------------------------------------------------------
@@ -117,7 +117,7 @@ h6 {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0s;
+    transition-delay: 0 !important;
   }
 }
 
@@ -174,7 +174,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   background: rgba(12, 11, 9, 0.6);
-  /* border-bottom: 1px solid rgba(12, 11, 9, 0.6); */
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -191,7 +191,7 @@ h6 {
   font-size: 28px;
   margin: 0;
   padding: 0;
-  line-height: 2;
+  line-height: 1;
   font-weight: 300;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
@@ -460,12 +460,12 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  /* width: 100%; */
+  width: 100%;
   height: 100vh;
-  background: url("../img/hero-1920x1052.jpg") top center;
+  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
-  /* padding: 0; */
+  padding: 0;
 }
 
 #hero:before {
@@ -497,14 +497,13 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-/* #hero h1 span {
-  color: gold;
-  line-height: 1.5;
-} */
+#hero h1 span {
+  color: #cda45e;
+}
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 10px;
+  margin-bottom: 10px 0 0 0;
   font-size: 22px;
 }
 
@@ -537,7 +536,7 @@ h6 {
   margin-left: 15px;
 }
 
-/* #hero .play-btn {
+#hero .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#cda45e 50%, rgba(205, 164, 94, 0.4) 52%);
@@ -545,9 +544,9 @@ h6 {
   display: block;
   position: relative;
   overflow: hidden;
-} */
+}
 
-/* #hero .play-btn::after {
+#hero .play-btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -560,9 +559,9 @@ h6 {
   border-left: 15px solid #fff;
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-} */
+}
 
-/* #hero .play-btn::before {
+#hero .play-btn::before {
   content: "";
   position: absolute;
   width: 120px;
@@ -571,8 +570,8 @@ h6 {
   animation-delay: 0s;
   -webkit-animation: pulsate-btn 2s;
   animation: pulsate-btn 2s;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: steps;
@@ -583,9 +582,9 @@ h6 {
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
-} */
+}
 
-/* #hero .play-btn:hover::after {
+#hero .play-btn:hover::after {
   border-left: 15px solid #cda45e;
   transform: scale(20);
 }
@@ -606,7 +605,7 @@ h6 {
   -webkit-animation: none;
   animation: none;
   border-radius: 0;
-} */
+}
 
 @media (min-width: 1024px) {
   #hero {
@@ -614,11 +613,11 @@ h6 {
   }
 }
 
-/* @media (max-width: 992px) {
+@media (max-width: 992px) {
   #hero .play-btn {
     margin-top: 30px;
   }
-} */
+}
 
 @media (max-height: 500px) {
   #hero {
@@ -706,15 +705,11 @@ section {
 
 .section-title p {
   margin: 0;
+  margin: 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", serif;
   color: #cda45e;
-}
-
-.blog-breadcrumbs {
-  padding: 15px 0;
-  margin-top: 110px;
 }
 
 /*--------------------------------------------------------------
@@ -938,7 +933,7 @@ section {
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 .menu #menu-flters li:hover,
@@ -962,7 +957,7 @@ section {
 }
 
 .menu .menu-content {
-  margin-left: 10px;
+  margin-left: 85px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -981,7 +976,7 @@ section {
 }
 
 .menu .menu-content a {
-  /* padding-right: 10px; */
+  padding-right: 10px;
   background: #1a1814;
   position: relative;
   z-index: 3;
@@ -996,8 +991,7 @@ section {
 
 .menu .menu-content span {
   background: #1a1814;
-  text-align: right;
-  /* position: relative; */
+  position: relative;
   z-index: 3;
   padding: 0 10px;
   font-weight: 600;
@@ -1005,9 +999,7 @@ section {
 }
 
 .menu .menu-ingredients {
-  min-width: 8rem;
-  max-width: 30rem;
-  margin: 0 10px;
+  margin-left: 85px;
   font-style: italic;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
@@ -1015,17 +1007,17 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Deals
+# Specials
 --------------------------------------------------------------*/
-.deals {
+.specials {
   overflow: hidden;
 }
 
-.deals .nav-tabs {
+.specials .nav-tabs {
   border: 0;
 }
 
-.deals .nav-link {
+.specials .nav-link {
   border: 0;
   padding: 12px 15px;
   transition: 0.3s;
@@ -1036,42 +1028,42 @@ section {
   font-size: 15px;
 }
 
-.deals .nav-link:hover {
+.specials .nav-link:hover {
   color: #cda45e;
 }
 
-.deals .nav-link.active {
+.specials .nav-link.active {
   color: #1a1814;
   background: #cda45e;
   border-color: #cda45e;
 }
 
-.deals .nav-link:hover {
+.specials .nav-link:hover {
   border-color: #cda45e;
 }
 
-.deals .tab-pane.active {
+.specials .tab-pane.active {
   -webkit-animation: fadeIn 0.5s ease-out;
   animation: fadeIn 0.5s ease-out;
 }
 
-.deals .details h3 {
+.specials .details h3 {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #fff;
 }
 
-.deals .details p {
+.specials .details p {
   color: #aaaaaa;
 }
 
-.deals .details p:last-child {
+.specials .details p:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 992px) {
-  .deals .nav-link {
+  .specials .nav-link {
     border: 0;
     padding: 15px;
   }
@@ -1332,13 +1324,13 @@ section {
 }
 
 .testimonials .testimonial-item p {
-  min-height: 180px;
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
   background: #26231d;
   position: relative;
   border-radius: 6px;
+  position: relative;
   z-index: 1;
 }
 
@@ -1375,6 +1367,90 @@ section {
   transform: scale(1.1);
 }
 
+/*--------------------------------------------------------------
+# Chefs
+--------------------------------------------------------------*/
+.chefs .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #343a40;
+  position: relative;
+  overflow: hidden;
+}
+
+.chefs .member .member-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+.chefs .member .member-info-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transition: bottom 0.4s;
+}
+
+.chefs .member .member-info-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.chefs .member .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.chefs .member .social {
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  right: 0;
+  height: 48px;
+  transition: bottom ease-in-out 0.4s;
+  text-align: center;
+}
+
+.chefs .member .social a {
+  transition: color 0.3s;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.chefs .member .social a:hover {
+  color: #cda45e;
+}
+
+.chefs .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.chefs .member:hover .member-info {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.chefs .member:hover .member-info-content {
+  bottom: 60px;
+  transition: bottom 0.4s;
+}
+
+.chefs .member:hover .social {
+  bottom: 0;
+  transition: bottom ease-in-out 0.4s;
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -1571,7 +1647,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", serif;
   color: #fff;
 }
 
