@@ -1,10 +1,10 @@
 /**
-* Template Name: Restaurantly - v3.7.0
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
+ * Template Name: Restaurantly - v3.7.0
+ * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+ * Author: BootstrapMade.com
+ * License: https://bootstrapmade.com/license/
+ */
+(function () {
   "use strict";
 
   /**
@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -116,7 +116,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -125,7 +125,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -135,7 +135,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -179,14 +179,15 @@
     if (menuContainer) {
       let menuIsotope = new Isotope(menuContainer, {
         itemSelector: '.menu-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        filter: '.filter-starters'
       });
 
       let menuFilters = select('#menu-flters li', true);
 
-      on('click', '#menu-flters li', function(e) {
+      on('click', '#menu-flters li', function (e) {
         e.preventDefault();
-        menuFilters.forEach(function(el) {
+        menuFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -194,7 +195,7 @@
         menuIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        menuIsotope.on('arrangeComplete', function() {
+        menuIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -203,7 +204,7 @@
   });
 
   /**
-   * Initiate glightbox 
+   * Initiate glightbox
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
@@ -257,7 +258,7 @@
   });
 
   /**
-   * Initiate gallery lightbox 
+   * Initiate gallery lightbox
    */
   const galleryLightbox = GLightbox({
     selector: '.gallery-lightbox'
