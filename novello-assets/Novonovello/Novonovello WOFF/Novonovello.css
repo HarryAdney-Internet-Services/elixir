@@ -1,0 +1,11 @@
+/* Webfont: Novonovello */@font-face {
+    font-family: 'Novonovello';
+    src: url('Novonovello.eot'); /* IE9 Compat Modes */
+    src: url('Novonovello.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Novonovello.woff') format('woff'), /* Modern Browsers */
+         url('Novonovello.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
