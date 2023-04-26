@@ -462,7 +462,7 @@ h6 {
 #hero {
   /* width: 100%; */
   height: 100vh;
-  background: url("../img/hero-1920x1052.webp") top center;
+  background: url("../") top center;
   background-size: cover;
   position: relative;
   /* padding: 0; */
