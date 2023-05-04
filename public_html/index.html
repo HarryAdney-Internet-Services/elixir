@@ -48,6 +48,14 @@
         line-height: 1.25rem;
       }
 
+      /*  .carousel-control-next,.carousel-control-prev{background-color: hsla(0,0%,50%);} */
+
+      .google_map {
+        width: 100%;
+        height: 325px;
+        border: 0;
+      }
+
       @media only screen and (max-width: 760px) {
         #topbar {
           padding-top: 1.75rem;
@@ -109,7 +117,7 @@
             <span role="none" class="logo-font">Novello Ristorante</span>
           </a>
         </h1>
-        <!-- <nav id="navbar" class="navbar order-last order-lg-0">
+        <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li>
               <a class="nav-link scrollto active" href="#hero">Home</a>
@@ -130,7 +138,7 @@
           <i class="bi bi-list mobile-nav-toggle">
 
           </i>
-        </nav> -->
+        </nav>
         <a href="tel:01642247413" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
       </div>
     </header>
@@ -150,58 +158,35 @@
       </div>
     </section>
     <main id="main">
-      <!-- <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li>
-            <a class="nav-link scrollto active" href="#hero">Home</a>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="#about">About</a>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="./menus/2022_Menu_Final.pdf" target="_blank">Menu</a>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="#gallery">Gallery</a>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle">
-
-        </i>
-      </nav> -->
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-lg-6 px-1 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
               <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-
-                  </button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2">
-                  </button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3">
-
-                  </button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/restaurant_area_628x467.jpg" width="628" height="467" alt="Part of the restaurant">
+                    <img src="./assets/img/carousel/potato_skins_300dpi.webp" width="628" height="467" alt="Potato skins with dips.">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/JTP70280-628x467.png" width="628" height="467" alt="Cocktail spirits bottles">
+                    <img src="assets/img/carousel/black_pudding_300dpi.webp" width="628" height="467" alt="Deep fried black pudding with onion relish
+                    on a bed of rocket.">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/restaurant_area_628x467.jpg" width="628" height="467" alt="Part of the restaurant">
+                    <img src="assets/img/carousel/cozze_alla_crema_300dpi.webp" width="628" height="467" alt="Cozze alla crema.">
                   </div>
+                  <!-- <div class="carousel-item">
+                    <img src="assets/img/carousel/kissing_tree_300dpi.webp" width="628" height="467" alt="A bottle of Kissing Tree.">
+                  </div> -->
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true">
 
-                  </span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
@@ -212,12 +197,11 @@
               </div>
             </div>
             <div class="col-lg-6 px-1 pt-lg-0 order-2 order-lg-1 content">
-              <h3>Welcome to Novello, Richmond's Premier Italian Restaurant and Cocktail Bar</h3>
+              <h3>Welcome to Novello, Middlesbrough's Premier Italian Restaurant and Bar.</h3>
               <p class="fst-italic">Have booked your table yet?</p>
               <ul>
                 <li>
                   <i class="bi bi-check-circle">
-
                   </i>Superb food available from 11am to late.
                 </li>
                 <li>
@@ -243,12 +227,13 @@
             <p>Our Current Menus</p>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col d-flex align-items-center">
               <p class="text-center">** BEFORE PLACING YOUR ORDER, PLEASE INFORM US IF A PERSON IN YOUR PARTY HAS A FOOD ALLERGY **<br>
-                For printed copies of any of our menus, full terms and conditions, and pre-order forms, please call into our restaurant, or call us on 01642 247413.</p>
+                For printed copies of any of our menus, full terms and conditions, and pre-order forms, please call into our restaurant, or call us on
+                01642 247413.<br><br>Alternatively, simply download the <a href="./assets/menus/main_menu_min.pdf">full menu</a> and the <a href="./assets/menus/kids_menu_min.pdf">kid's menu</a>.</p>
             </div>
             <div class="col">
-              <img src="./assets/img/menu-394x408.png" alt="menus">
+              <img src="./assets/img/novello_menu_394x408_300dpi.webp" alt="menus">
             </div>
 
 
@@ -266,68 +251,62 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left">
-
-                    </i>We were one of the first diners for Xmas lunch, food was delicious, massive prawn cocktail, would have been nice with a roll! <i class="bx bxs-quote-alt-right quote-icon-right">
-                    </i>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    The food was unreal and staff all very friendly and welcoming. We will definitely be back. Thank you for a great experience.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img src="./assets/img/testimonials/jacqui_A-90x90.jpg" class="testimonial-img" alt="Jacquie's testimonial picture">
-                  <h3>Jacquie A.</h3>
-                  <h4>December 2021</h4>
+                  <h3>Becca D.</h3>
+                  <h4>January 2023</h4>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left">
-
-                    </i>Beautiful place, great service and gorgeous food… can't wait to return and try out the cocktails. <i class="bx bxs-quote-alt-right quote-icon-right">
-                    </i>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lovely fresh surroundings and great food, Also great service from the young gentleman waiting on my wife & I, TOP Marks, professional polite & efficient.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img src="./assets//img/testimonials/denisemary_M-90x90.jpg" class="testimonial-img" alt="Denise's testimonial picture">
-                  <h3>DeniseMary M.</h3>
-                  <h4>November 2021</h4>
+                  <h3>JRAGS.</h3>
+                  <h4>December 2022</h4>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left">
-
-                    </i>Me and my Mrs had breakfast here this morning and I can honestly say that it was excellent. <i class="bx bxs-quote-alt-right quote-icon-right">
-                    </i>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Really nice food, good portions, excellent customer service. Highly recommend.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img src="./assets/img/testimonials/jonathan_M-90x90.jpg" class="testimonial-img" alt="Jonathan's testimonial picture">
                   <h3>Jonathan M.</h3>
                   <h4>November 2021</h4>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left">
-
-                    </i>Been a few times now. Great food, great atmosphere and very friendly staff. Good value for money. <i class="bx bxs-quote-alt-right quote-icon-right">
-                    </i>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Absolutely gorgeous food. Large portions. Beautiful interior. Definitely going back loved the place. <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img src="./assets/img/testimonials/nicky-J-90x90.jpg" class="testimonial-img" alt="Nicky's testimonial picture">
-                  <h3>Nicky J.</h3>
-                  <h4>November 2021</h4>
+                  <h3>Alison G.</h3>
+                  <h4>April 2023</h4>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left">
-
-                    </i>Had a lovely lunch. Fast service, great tasty food and great atmosphere. Definitely recommended. <i class="bx bxs-quote-alt-right quote-icon-right">
-                    </i>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Great food, great service and great value for money. The restaurant was also very clean.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img src="./assets/img/testimonials/sharon_F-90x90.jpg" class="testimonial-img" alt="Sharon's testimonial picture">
-                  <h3>Sharon F</h3>
-                  <h4>November 2021</h4>
+                  <h3>Emma T.</h3>
+                  <h4>February 2022</h4>
                 </div>
               </div>
+
             </div>
             <div class="swiper-pagination">
 
@@ -415,18 +394,12 @@
             <div class="col-lg-4">
               <div class="info">
                 <div class="address">
-                  <i class="bi bi-geo-alt">
-
-                  </i>
-                  <p>
-                    <strong>Location:</strong>
-                  </p>
-                  <p>Address line 1<br>Address line 2<br>Post code</p>
+                  <i class="bi bi-geo-alt"></i>
+                  <p><strong>Location:</strong></p>
+                  <p>212, 214 Linthorpe Rd<br>Middlesbrough<br>TS1 3QW</p>
                 </div>
                 <div class="open-hours">
-                  <i class="bi bi-clock">
-
-                  </i>
+                  <i class="bi bi-clock"></i>
                   <p>
                     <strong>Open Hours:</strong>
                   </p>
@@ -434,22 +407,17 @@
                   <p>Friday-Saturday:<br>10:00 AM - 11:30 AM</p>
                 </div>
                 <div class="phone">
-                  <i class="bi bi-phone">
-
-                  </i>
-                  <p>
-                    <strong>Call:</strong>
-                  </p>
+                  <i class="bi bi-phone"></i>
+                  <p><strong>Call:</strong></p>
                   <p>01748 822 035</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-8 mt-5 mt-lg-0">
               <div data-aos="fade-up">
-                <iframe title="map" style="border:0; width: 100%; height: 325px;"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.6031181249718!2d-1.73890477074286!3d54.402691879400045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487c1f806bb8395d%3A0xd88d6760102baa9a!2sElixir!5e0!3m2!1sen!2suk!4v1638194234770!5m2!1sen!2suk"
-                  frameborder="0" allowfullscreen="" loading="lazy">
-                </iframe>
+                <iframe class="google_map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.9123264898276!2d-1.2411513870890007!3d54.57029687255552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487eed10a7f3a303%3A0x8de09c71d6acbfbd!2sNovello%20Ristorante!5e0!3m2!1sen!2suk!4v1683133774928!5m2!1sen!2suk"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
